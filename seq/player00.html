@@ -1,0 +1,43 @@
+<html lang="en"><head><title>SEQ Report</title><style>body {
+  background-color: #1E1E1E;
+  color: #D4D4D4;
+  font-family: Lucida Console;
+  padding-left: 10%;
+}
+h1 {
+  text-align: center;
+  padding-left: 0;
+}
+.focus {
+  background-color: #264F78;
+}
+a:link {
+  color: #4E94C3;
+}
+a:visited {
+  color: #4E94C3;
+}
+.g {
+  color: DimGray;
+}
+.v {
+  color: #1E1E1E;
+}
+.c {
+  color: #6A8759;
+}
+</style><script>function toggleHideBytes() {
+  const isVisible = document.querySelector('.g');
+  if (isVisible != null) {
+    const elements = document.getElementsByClassName("g");
+    while(elements.length > 0) {
+      elements[0].className = 'v';
+    }
+  } else {
+    const elements = document.getElementsByClassName("v");
+    while(elements.length > 0) {
+      elements[0].className = 'g';
+    }
+  }
+}
+</script></head><body><h1>files/game/player00.seq</h1><button onclick="toggleHideBytes()">Toggle Hide Bytes</button><div><p><div id="10">00010 | b <a href="#18">0x18</a> <span class="g">01320000 00000018</span></div><div id="18">00018 | i32_mov chr_p, gpr2 <span class="g">04022602</span></div><div id="1C">0001C | SEQ_ReqSetPrev 0xE, 0x0 <span class="g">02013F00 0000000E 3F000000 00000000 00000070</span></div><div id="30">00030 | i32_mov gpr2, gpr19 <span class="g">04020213</span></div><div id="34">00034 | op_0208 gpr19 <span class="g">02080013</span></div><div id="38">00038 | ptr_mov *gpr19->field_0x68, chr_p <span class="g">09015300 00000068 26000000</span></div><div id="44">00044 | TskExecFunc gpr2 <span class="g">02070002</span></div><div id="48">00048 | ptr_from_offset gpr1, <a href="#54"> 0x54 </a><span class="g">0908013F 00000054</span></div><div id="50">00050 | end <span class="g">00000000</span></div><div id="54">00054 | i32_mov *chr_p->field_0x5C, 0x0 <span class="g">04026600 0000005C 3F000000 00000000</span></div><div id="64">00064 | TskSendMsg 0x100 <span class="g">0206003F 00000100</span></div><div id="6C">0006C | end <span class="g">00000000</span></div></p><p><div id="70">00070 | binary_data 0x10 bytes  {00000001 00000010 00000010 00000000}</div></p><p><div id="80">00080 | b <a href="#88">0x88</a> <span class="g">01320000 00000088</span></div><div id="88">00088 | i32_mov chr_p, gpr2 <span class="g">04022602</span></div><div id="8C">0008C | ptr_from_offset gpr1, <a href="#98"> 0x98 </a><span class="g">0908013F 00000098</span></div><div id="94">00094 | end <span class="g">00000000</span></div><div id="98">00098 | i16_mov gpr21, PAUSE_GAME->field_0x00 <span class="g">0616157B 00000000</span></div><div id="A0">000A0 | bnez <a href="#C0">0xC0</a> <span class="g">01340000 000000C0</span></div><div id="A8">000A8 | i32_mov *chr_p->field_0x5C, 0x1 <span class="g">04026600 0000005C 3F000000 00000001</span></div><div id="B8">000B8 | TskSendMsg 0x100 <span class="g">0206003F 00000100</span></div><div id="C0">000C0 | end <span class="g">00000000</span></div><div id="C4">000C4 | end <span class="g">00000000</span></div><div id="C8">000C8 | end <span class="g">00000000</span></div><div id="CC">000CC | end <span class="g">00000000</span></div></p></div></body></html>
